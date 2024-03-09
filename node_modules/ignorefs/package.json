@@ -1,0 +1,54 @@
+{
+  "title": "IgnoreFS",
+  "name": "ignorefs",
+  "version": "1.0.0",
+  "description": "Ignore common and custom patterns of the file system",
+  "homepage": "https://github.com/bevry/ignorefs",
+  "license": {
+    "type": "MIT"
+  },
+  "badges": {
+    "travis": true,
+    "npm": true,
+    "gittip": "bevry",
+    "flattr": "344188/balupton-on-Flattr",
+    "paypal": "QB8GQPZAH84N6"
+  },
+  "keywords": [
+    "text",
+    "binary",
+    "encoding"
+  ],
+  "author": "2012+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me), 2011 Benjamin Lupton <b@lupton.cc> (http://balupton.com)",
+  "maintainers": [
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+  ],
+  "contributors": [],
+  "bugs": {
+    "url": "https://github.com/bevry/ignorefs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/bevry/ignorefs.git"
+  },
+  "engines": {
+    "node": ">=0.4"
+  },
+  "dependencies": {
+    "ignorepatterns": "~1.0.0"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.6.2",
+    "joe": "~1.3.0",
+    "joe-reporter-console": "~1.2.1",
+    "chai": "~1.8.1",
+    "projectz": "~0.2.3"
+  },
+  "directories": {
+    "lib": "./out/lib"
+  },
+  "scripts": {
+    "test": "node ./out/test/ignorefs-test.js"
+  },
+  "main": "./out/lib/ignorefs.js"
+}

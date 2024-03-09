@@ -1,0 +1,69 @@
+{
+  "title": "TaskGroup",
+  "name": "taskgroup",
+  "version": "3.3.9",
+  "description": "Group together synchronous and asynchronous tasks and execute them with support for concurrency, naming, and nesting.",
+  "homepage": "https://github.com/bevry/taskgroup",
+  "license": {
+    "type": "MIT"
+  },
+  "badges": {
+    "travis": true,
+    "npm": true,
+    "david": true,
+    "daviddev": true,
+    "gittip": "bevry",
+    "flattr": "344188/balupton-on-Flattr",
+    "paypal": "QB8GQPZAH84N6",
+    "bitcoin": "https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a",
+    "wishlist": "http://amzn.com/w/2F8TXKSNAFG4V"
+  },
+  "keywords": [
+    "flow",
+    "control",
+    "async",
+    "sync",
+    "tasks",
+    "batch",
+    "concurrency"
+  ],
+  "author": "2013+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me), 2011-2012 Benjamin Lupton <b@lupton.cc> (http://balupton.com)",
+  "maintainers": [
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+  ],
+  "contributors": [
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)",
+    "crito (https://github.com/crito)",
+    "pflannery (https://github.com/pflannery)",
+    "sfrdmn (https://github.com/sfrdmn)"
+  ],
+  "bugs": {
+    "url": "https://github.com/bevry/taskgroup/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/bevry/taskgroup.git"
+  },
+  "engines": {
+    "node": ">=0.4"
+  },
+  "dependencies": {
+    "ambi": "~2.1.5",
+    "extendonclass": "~1.0.0"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.7.1",
+    "joe": "~1.4.0",
+    "joe-reporter-console": "~1.2.1",
+    "chai": "~1.9.1",
+    "projectz": "~0.3.11"
+  },
+  "directories": {
+    "lib": "./out/lib"
+  },
+  "scripts": {
+    "preinstall": "node ./cyclic.js",
+    "test": "node ./out/test/taskgroup-test.js"
+  },
+  "main": "./out/lib/taskgroup.js"
+}

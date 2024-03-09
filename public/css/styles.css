@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+/* $border-radius: 20px; */
+body {
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+header {
+  margin-top: 16px;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+.widget {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 550px;
+  width: 500px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(120deg, #47bbff, #2b32b2);
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+}
+
+.weatherLocation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.weatherLocation button{
+  background: #080705;
+  color:#fff;
+  border: 1px solid transparent;
+}
+.weatherLocation input:focus{
+  outline: 0 none;
+}
+
+.widget .weatherIcon {
+  height: 60%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 100px;
+  color: white
+}
+ .widget .weatherIcon i {
+  padding-top: 30px;
+}
+.input-field {
+  width: 60%;
+  border-radius: 50px;
+  border: none;
+  height: 40px;
+  margin-right: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+.search-button {
+  width: 80px;
+  height: 40px;
+  border-radius: 50px;
+}
+.icon-and-weatherInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+.temperature {
+  font-size: 55px;
+  color: white;
+}
+.place {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 70px;
+  color: white;
+}
+.weatherCondition {
+  color: white;
+}
+.date {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  color: white;
+
+}
